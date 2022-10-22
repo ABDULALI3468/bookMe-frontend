@@ -1,6 +1,10 @@
+import Nav from "./components/Nav";
+import './styles/index.css'
 function App() {
   return (
-    <h1>BISMILLAH</h1>
+    <>
+      <Nav />
+    </>
   );
 }
 
