@@ -6,9 +6,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
-  border-right: 1px solid black;
+  width: 100%;
   transition: 1s all ease;
+  background-color: white;
+  z-index: 10;
+  box-shadow: inset 0 0 20px 0 grey;
 }
 
 .hidden {
@@ -20,7 +22,7 @@
   top: 20px;
   left: 20px;
   font-size: 1rem;
-  z-index: 3;
+  z-index: 15;
 }
 
 .app-logo {
@@ -84,5 +86,9 @@
 @media screen and (min-width: 768px) {
   .nav {
     width: 30%;
+  }
+
+  .close-nav {
+    display: none;
   }
 }
