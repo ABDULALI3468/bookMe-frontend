@@ -1,0 +1,97 @@
+.tour-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #97bf0f;
+  height: 100vh;
+  flex: 1;
+}
+
+p {
+  text-align: center;
+  color: aliceblue;
+}
+
+.tour-content h1 {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  border-bottom: 1px solid rgb(247 247 248 / 0.3);
+  padding: 20px 50px;
+}
+
+.column-rigth {
+  justify-content: space-between;
+}
+
+.TourForm {
+  display: flex;
+  justify-content: space-around;
+  row-gap: 10px;
+  padding: 30px 0;
+}
+
+.TourForm .form-column,
+.TourForm .column-rigth {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 0 20px;
+}
+
+.column-rigth div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.TourForm input,
+.TourForm textarea,
+.TourForm button {
+  padding: 5%;
+  border-radius: 20px;
+  color: white;
+  border: solid white 1px;
+  background-color: #97bf0f;
+  font-weight: bolder;
+}
+
+.TourForm textarea {
+  height: 100px;
+}
+
+.TourForm *::placeholder {
+  font-style: italic;
+  font-weight: 200;
+  color: white;
+}
+
+.TourForm button {
+  background-color: white;
+  border: none;
+  color: #97bf0f;
+  font-size: 20px;
+}
+
+.add-tour-btn {
+  cursor: pointer;
+}
+
+.form-column textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.form-column textarea::-webkit-resizer {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .TourForm {
+    flex-direction: column;
+  }
+
+  .tour-content h1 {
+    letter-spacing: 0;
+  }
+}
