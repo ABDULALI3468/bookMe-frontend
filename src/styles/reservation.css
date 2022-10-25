@@ -52,8 +52,11 @@
   background: transparent;
   border-radius: 20px;
   border: 2px solid white;
-  padding: 1rem;
+  padding: 0 1rem 0 1rem;
   margin-bottom: 2rem;
+  color: black;
+  font-size: 1rem;
+  font-family: 'Rubik';
 }
 
 .reservation-input:focus {
