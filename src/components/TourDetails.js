@@ -41,9 +41,7 @@ const TourDetails = () => {
         </ul>
         <button type="button" className="reserve-button">
           <FiSettings className="reserve-symbol-1" />
-          {/* <span className="reserve-symbol-1">Mod</span> */}
           Reserve
-          {/* <span className="reserve-symbol-2">Mod</span> */}
           <AiFillRightCircle className="reserve-symbol-2" />
         </button>
       </div>
