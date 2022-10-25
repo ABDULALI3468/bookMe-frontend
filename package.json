@@ -20,7 +20,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build",
+    "eslint": "npx eslint . --fix ",
+    "stylelint": "npx stylelint **/*.{css,scss} --fix",
+    "linters": "npm run stylelint && npm run eslint && npx prettier --write ."
   },
   "eslintConfig": {
     "extends": [

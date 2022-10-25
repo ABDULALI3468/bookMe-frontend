@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable object-curly-newline */
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import Swiper for carrousel
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -50,48 +51,56 @@ const MainPage = () => {
         }}
       >
         <SwiperSlide>
-          <div className="each-tour">
-            <img src={tour1} className="tour-image" alt="Tour" />
-            <h2 className="tour-heading">NORTHEN LIGHTS</h2>
-            <Dots />
-            <p className="tour-detail">
-              This is an amazing place in North of Canada which gathers people
-              attention from all over the World
-            </p>
-          </div>
+          <Link to="/TourDetails">
+            <div className="each-tour">
+              <img src={tour1} className="tour-image" alt="Tour" />
+              <h2 className="tour-heading">NORTHEN LIGHTS</h2>
+              <Dots />
+              <p className="tour-detail">
+                This is an amazing place in North of Canada which gathers people
+                attention from all over the World.
+              </p>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="each-tour">
-            <img src={tour2} className="tour-image" alt="Tour" />
-            <h2 className="tour-heading">NORTHEN LIGHTS</h2>
-            <Dots />
-            <p className="tour-detail">
-              This is an amazing place in North of Canada which gathers people
-              attention from all over the World
-            </p>
-          </div>
+          <Link to="/TourDetails">
+            <div className="each-tour">
+              <img src={tour2} className="tour-image" alt="Tour" />
+              <h2 className="tour-heading">NORTHEN LIGHTS</h2>
+              <Dots />
+              <p className="tour-detail">
+                This is an amazing place in North of Canada which gathers people
+                attention from all over the World
+              </p>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="each-tour">
-            <img src={tour3} className="tour-image" alt="Tour" />
-            <h2 className="tour-heading">NORTHEN LIGHTS</h2>
-            <Dots />
-            <p className="tour-detail">
-              This is an amazing place in North of Canada which gathers people
-              attention from all over the World
-            </p>
-          </div>
+          <Link to="/TourDetails">
+            <div className="each-tour">
+              <img src={tour3} className="tour-image" alt="Tour" />
+              <h2 className="tour-heading">NORTHEN LIGHTS</h2>
+              <Dots />
+              <p className="tour-detail">
+                This is an amazing place in North of Canada which gathers people
+                attention from all over the World
+              </p>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="each-tour">
-            <img src={tour4} className="tour-image" alt="Tour" />
-            <h2 className="tour-heading">NORTHEN LIGHTS</h2>
-            <Dots />
-            <p className="tour-detail">
-              This is an amazing place in North of Canada which gathers people
-              attention from all over the World
-            </p>
-          </div>
+          <Link to="/TourDetails">
+            <div className="each-tour">
+              <img src={tour4} className="tour-image" alt="Tour" />
+              <h2 className="tour-heading">NORTHEN LIGHTS</h2>
+              <Dots />
+              <p className="tour-detail">
+                This is an amazing place in North of Canada which gathers people
+                attention from all over the World
+              </p>
+            </div>
+          </Link>
         </SwiperSlide>
       </Swiper>
     </main>
