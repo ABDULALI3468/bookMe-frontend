@@ -1,19 +1,26 @@
 .delete-tour {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+  border: 1px solid rgb(0, 208, 255);
+  box-shadow: inset 0 0 15px 0 #db7f64;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  margin: 0 auto;
-  height: 100vh;
-  flex: 1;
 }
 
 .tour-container {
   display: grid;
-  padding: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
+  width: calc(100% - 43%);
+  margin-left: 30%;
 }
 
 .tour-element {
@@ -36,7 +43,6 @@
   letter-spacing: 0.07em;
   color: #b7b3b3;
   font-size: 14px;
-  margin-bottom: 4rem;
 }
 
 .midle {
