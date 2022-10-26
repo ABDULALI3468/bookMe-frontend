@@ -8,7 +8,6 @@ import CreateTour from './components/CreateTour';
 import SignUpPage from './components/SignUpPage';
 import LogInPage from './components/LogInPage';
 
-
 import './styles/index.css';
 
 function App() {
