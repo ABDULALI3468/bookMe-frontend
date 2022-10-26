@@ -5,9 +5,9 @@ import MainPage from './components/MainPage';
 import DeleteTours from './components/DeleteTours';
 import TourDetails from './components/TourDetails';
 import CreateTour from './components/CreateTour';
+import Reservation from './components/Reservation';
 import SignUpPage from './components/SignUpPage';
 import LogInPage from './components/LogInPage';
-
 import './styles/index.css';
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <Route path="/CreateTour" element={<CreateTour />} />
         <Route path="/DeleteTours" element={<DeleteTours />} />
         <Route path="/tourDetails" element={<TourDetails />} />
+        <Route path="/reservations" element={<Reservation />} />
         <Route path="/" element={<MainPage />} />
       </Routes>
     </>
