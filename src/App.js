@@ -6,6 +6,9 @@ import DeleteTours from './components/DeleteTours';
 import TourDetails from './components/TourDetails';
 import CreateTour from './components/CreateTour';
 import SignUpPage from './components/SignUpPage';
+import LogInPage from './components/LogInPage';
+
+
 import './styles/index.css';
 
 function App() {
@@ -14,6 +17,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/SignUp" element={<SignUpPage />} />
+        <Route path="/LogIn" element={<LogInPage />} />
         <Route path="/CreateTour" element={<CreateTour />} />
         <Route path="/DeleteTours" element={<DeleteTours />} />
         <Route path="/tourDetails" element={<TourDetails />} />
