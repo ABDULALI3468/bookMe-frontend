@@ -21,44 +21,56 @@
   grid-auto-rows: 1fr;
   width: calc(100% - 43%);
   margin-left: 30%;
+  background: #efefef;
+  padding-top: 3rem;
 }
 
 .tour-element {
+  position: relative;
   text-align: center;
   position: relative;
   color: white;
-  width: 250px;
-  height: 250px;
+  width: 100%;
 }
 
-.tour-container img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.tour-image {
+  background: url('../assets/images/tour3.jpeg');
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px 0 green;
+  position: relative;
+}
+
+.tour-overlay {
+  opacity: 0.5;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .tour-detail {
-  width: 85%;
-  line-height: 25px;
-  letter-spacing: 0.07em;
-  color: #b7b3b3;
-  font-size: 14px;
+  width: 86%;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #4c2b2b;
+  font-size: 16px;
 }
 
 .midle {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
+  top: 36%;
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-}
-
-.midle:hover {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .midle p {
@@ -67,12 +79,15 @@
 
 .midle button {
   padding: 10px;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
   background-color: inherit;
   color: white;
   font-weight: 900;
-  border: 1px solid white;
+  font-size: 16px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px 0 black;
 }
 
 .disable {
@@ -92,6 +107,8 @@
 @media (max-width: 680px) {
   .tour-container {
     grid-template-columns: 1fr;
+    margin-left: 0;
+    width: 100%;
   }
 
   .delete-container {

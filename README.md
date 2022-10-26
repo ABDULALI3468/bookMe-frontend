@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tourify
 
-## Available Scripts
+> **This is an app in wich you can reserve a tour, create a tour, delete a tour and show all your reserved tours. This app was created separating the Fron-End and the Back-End in two repositories. This is the repository of the front-end API.**
 
-In the project directory, you can run:
 
-### `npm start`
+## Live Demo
+[Link Live Demo]()
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![presentation](https://i.imgur.com/Gus9sKi.png)
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML
+- CSS
+- JavaScript
+- Ract
+- Redux
 
-### `npm run build`
+## Live Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Link to live Demo]()
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone the repository using the next link: https://github.com/ABDULALI3468/bookMe-frontend.git
+- With your code editor open the folder where you cloned the project.
+- In your code editor terminal run `npm install` to install all the dependencies needed.
+- In your code editor terminal run `npm start` to start the local server.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Authors
 
-## Learn More
+👤 **ABDUL ALI**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> * This is My **GitHub**: ![GitHub followers](https://img.shields.io/github/followers/ABDULALI3468?label=ABDULALI&style=social)
+> * This is My **Linkedin**: [![Linkedin Badge](https://img.shields.io/badge/-ABDUL%20ALI-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/abdul-ali-5400bb216/)](https://www.linkedin.com/in/abdul-ali-5400bb216/)&nbsp;
+> * This is My **Twitter**: [![Twitter Badge](https://img.shields.io/badge/-@mrabdul_ali_-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/mrabdul_ali)](https://twitter.com/mrabdul_ali)&nbsp;
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues, and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](https://github.com/ABDULALI3468/bookMe-frontend.git/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
 
-### Making a Progressive Web App
+- Original design idea by [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Show your support
 
-### Advanced Configuration
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
