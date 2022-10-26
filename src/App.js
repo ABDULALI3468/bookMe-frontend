@@ -13,7 +13,7 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="/SignUpPage" element={<SignUpPage />} />
+        <Route path="/SignUp" element={<SignUpPage />} />
         <Route path="/CreateTour" element={<CreateTour />} />
         <Route path="/DeleteTours" element={<DeleteTours />} />
         <Route path="/tourDetails" element={<TourDetails />} />
