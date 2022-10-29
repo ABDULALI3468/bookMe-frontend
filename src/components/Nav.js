@@ -2,18 +2,29 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable implicit-arrow-linebreak */
 import { React, useState, useRef } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { FaAngellist } from 'react-icons/fa';
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 import { GrClose } from 'react-icons/gr';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { removeUSER } from '../redux/user/user';
 import logo from '../assets/images/apps-logo.webp';
 import '../styles/nav.css';
 
 const Nav = () => {
+  const user = useSelector((store) => store.user);
+  const dispatch = useDispatch();
   const navRef = useRef();
   const [isHide, setHide] = useState(false);
   const showHideNavbar = () => {
     navRef.current.classList.toggle('hidden');
+  };
+
+  const logoutUser = (e) => {
+    e.preventDefault();
+    dispatch(removeUSER());
+    localStorage.removeItem('user');
+    alert('USER SIGNED OUT SUCCESSFULLY!');
   };
 
   return (
@@ -44,6 +55,19 @@ const Nav = () => {
             Delete Tour
           </button>
         </div>
+
+        {user.length > 0 ? (
+          <button
+            type="button"
+            className="sign-out-button"
+            onClick={logoutUser}
+          >
+            Sign Out
+          </button>
+        ) : (
+          ''
+        )}
+
         <div className="nav-footer">
           <ul className="links-container">
             <li className="links">
