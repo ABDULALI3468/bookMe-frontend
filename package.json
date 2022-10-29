@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -24,7 +25,7 @@
     "deploy": "npm run build && gh-pages -d build",
     "eslint": "npx eslint . --fix ",
     "stylelint": "npx stylelint **/*.{css,scss} --fix",
-    "linters": "npm run stylelint && npm run eslint && npx prettier --write ."
+    "linters": "npm run stylelint && npm run eslint"
   },
   "eslintConfig": {
     "extends": [
