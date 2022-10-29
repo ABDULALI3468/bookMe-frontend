@@ -1,4 +1,5 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import MainPage from './components/MainPage';
@@ -8,22 +9,25 @@ import CreateTour from './components/CreateTour';
 import Reservation from './components/Reservation';
 import SignUpPage from './components/SignUpPage';
 import LogInPage from './components/LogInPage';
+import store from './Redux/store';
 import './styles/index.css';
 
 function App() {
   return (
-    <>
-      <Nav />
-      <Routes>
-        <Route path="/SignUp" element={<SignUpPage />} />
-        <Route path="/LogIn" element={<LogInPage />} />
-        <Route path="/CreateTour" element={<CreateTour />} />
-        <Route path="/DeleteTours" element={<DeleteTours />} />
-        <Route path="/tourDetails" element={<TourDetails />} />
-        <Route path="/reservations" element={<Reservation />} />
-        <Route path="/" element={<MainPage />} />
-      </Routes>
-    </>
+    <Provider store={store}>
+      <>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/tours/:tourID" element={<TourDetails />} />
+          <Route path="/tours/delete" element={<DeleteTours />} />
+          <Route path="/tours/create" element={<CreateTour />} />
+          <Route path="/tours/reserve" element={<Reservation />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/login" element={<LogInPage />} />
+        </Routes>
+      </>
+    </Provider>
   );
 }
 
