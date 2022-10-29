@@ -27,7 +27,7 @@
     "deploy": "npm run build && gh-pages -d build",
     "eslint": "npx eslint . --fix ",
     "stylelint": "npx stylelint **/*.{css,scss} --fix",
-    "linters": "npm run stylelint && npm run eslint && npx prettier --write ."
+    "linters": "npm run stylelint && npm run eslint"
   },
   "eslintConfig": {
     "extends": [
