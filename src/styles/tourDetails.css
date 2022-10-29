@@ -15,6 +15,8 @@
 }
 
 .tour-image-container {
+  /* position: absolute;
+  top: 30px; */
   margin-top: 30px;
 }
 
@@ -31,6 +33,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  /* margin-top: 650px; */
 }
 
 .tour-heading {

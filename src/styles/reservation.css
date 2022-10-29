@@ -59,6 +59,11 @@
   font-family: 'Rubik', sans-serif;
 }
 
+.reservation-input:hover {
+  border: 2px solid white;
+  box-shadow: inset 0 0 15px 0 greenyellow;
+}
+
 .reservation-input:focus {
   outline: none;
   border: 2px solid white;
