@@ -9,7 +9,7 @@ import CreateTour from './components/CreateTour';
 import Reservation from './components/Reservation';
 import SignUpPage from './components/SignUpPage';
 import LogInPage from './components/LogInPage';
-import store from './Redux/store';
+import store from './redux/store';
 import './styles/index.css';
 
 function App() {
