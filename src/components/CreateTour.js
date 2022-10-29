@@ -30,7 +30,7 @@ const CreateTour = () => {
           <div>
             <input type="text" placeholder="City" required />
             <input type="number" placeholder="Cost" required />
-            <input type="text" placeholder="Photo URL" required />
+            <input type="url" placeholder="Photo URL" required />
           </div>
           <div>
             <button className="add-tour-btn" type="submit" value="add-tour">
