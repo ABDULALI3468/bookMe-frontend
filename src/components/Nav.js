@@ -3,6 +3,8 @@
 /* eslint-disable implicit-arrow-linebreak */
 import { React, useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaAngellist } from 'react-icons/fa';
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 import { GrClose } from 'react-icons/gr';
@@ -40,19 +42,29 @@ const Nav = () => {
         <img className="app-logo" src={logo} alt="" />
         <div className="nav-items">
           <button type="button" className="nav-item">
-            Tours
+            <NavLink onClick={showHideNavbar} to="/">
+              Tours
+            </NavLink>
           </button>
           <button type="button" className="nav-item">
-            My reservations
+            <NavLink onClick={showHideNavbar} to="/tours/reserve">
+              My reservations
+            </NavLink>
           </button>
           <button type="button" className="nav-item">
-            Reserver Tour
+            <NavLink onClick={showHideNavbar} to="/tours/reserve">
+              Reserver Tour
+            </NavLink>
           </button>
           <button type="button" className="nav-item">
-            Create Tour
+            <NavLink onClick={showHideNavbar} to="/tours/create">
+              Create Tour
+            </NavLink>
           </button>
           <button type="button" className="nav-item">
-            Delete Tour
+            <NavLink onClick={showHideNavbar} to="/tours/delete">
+              Delete Tour
+            </NavLink>
           </button>
         </div>
 
@@ -71,24 +83,24 @@ const Nav = () => {
         <div className="nav-footer">
           <ul className="links-container">
             <li className="links">
-              <a href="/">
+              <NavLink to="/">
                 <BsGithub className="links" />
-              </a>
+              </NavLink>
             </li>
             <li className="links">
-              <a href="/">
+              <NavLink to="/">
                 <BsLinkedin className="links" />
-              </a>
+              </NavLink>
             </li>
             <li className="links">
-              <a href="/">
+              <NavLink to="/">
                 <FaAngellist className="links" />
-              </a>
+              </NavLink>
             </li>
             <li className="links">
-              <a href="/">
+              <NavLink to="/">
                 <BsTwitter className="links" />
-              </a>
+              </NavLink>
             </li>
           </ul>
           <h1 className="heading">&#169; 2015 PIAGIO & C.S.P.A - P.IVA</h1>
