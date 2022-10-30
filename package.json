@@ -14,6 +14,8 @@
     "react-router": "^6.4.2",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "crypto-js": "^4.1.1",
+    "cryptr": "^6.0.3",
     "swiper": "^8.4.2",
     "web-vitals": "^2.1.4"
   },
@@ -25,7 +27,7 @@
     "deploy": "npm run build && gh-pages -d build",
     "eslint": "npx eslint . --fix ",
     "stylelint": "npx stylelint **/*.{css,scss} --fix",
-    "linters": "npm run stylelint && npm run eslint && npx prettier --write ."
+    "linters": "npm run stylelint && npm run eslint"
   },
   "eslintConfig": {
     "extends": [

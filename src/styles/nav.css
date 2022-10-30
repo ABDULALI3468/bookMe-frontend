@@ -57,6 +57,19 @@
   color: white;
 }
 
+.sign-out-button {
+  position: fixed;
+  bottom: 13%;
+  height: 3rem;
+  width: 10rem;
+  font-size: 20px;
+  background-color: #97bf0f;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 27px;
+}
+
 .nav-footer {
   position: absolute;
   bottom: 2rem;

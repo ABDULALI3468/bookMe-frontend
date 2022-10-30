@@ -3,6 +3,7 @@
 /* eslint-disable object-curly-newline */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 // import Swiper for carrousel
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -21,11 +22,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const MainPage = () => {
+  const user = useSelector((store) => store.user);
+
   return (
     <main className="main-page">
       <div className="header">
         <h1>OUR LATEST TOURS</h1>
-        <p>Please select a Tour</p>
+        <p>
+          {user.length > 0 ? `Hello ${user[0].user.name}, ` : ''}
+          Please select a Tour
+        </p>
         <Dots />
       </div>
 
