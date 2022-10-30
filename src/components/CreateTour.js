@@ -74,9 +74,7 @@ const CreateTour = () => {
           <textarea
             placeholder="Description"
             value={state.description}
-            onChange={(e) =>
-              setState({ ...state, description: e.target.value })
-            }
+            onChange={(e) => setState({ ...state, description: e.target.value })}
             required
           />
         </div>
