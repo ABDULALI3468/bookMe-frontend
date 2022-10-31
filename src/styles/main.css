@@ -35,17 +35,9 @@
   width: 7px;
   margin: 2px;
   opacity: 0.5;
-  background-color: rgb(224, 217, 217);
+  background-color: rgb(193 65 209);
   border-radius: 50%;
   display: inline-block;
-}
-
-.tour-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
 }
 
 .each-tour {
@@ -122,13 +114,6 @@
   .slide-container {
     width: 100%;
     padding: 0 40px 40px 40px;
-  }
-
-  .tour-container {
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
   }
 
   .each-tour {
