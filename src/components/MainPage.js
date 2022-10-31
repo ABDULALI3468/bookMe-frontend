@@ -1,18 +1,14 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable object-curly-newline */
-import React from 'react';
+/* eslint-disable react/jsx-one-expression-per-line */
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 // import Swiper for carrousel
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import tour1 from '../assets/images/tour1.jpeg';
-import tour2 from '../assets/images/tour2.jpg';
-import tour3 from '../assets/images/tour3.jpeg';
-import tour4 from '../assets/images/tour4.jpeg';
-
+import { fetchApiDataTours } from '../redux/tours/toursAPI';
 import '../styles/main.css';
 import Dots from './Dots';
 
@@ -23,6 +19,12 @@ import 'swiper/css/pagination';
 
 const MainPage = () => {
   const user = useSelector((store) => store.user);
+  const tours = useSelector((store) => store.tours);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchApiDataTours());
+  }, [dispatch]);
 
   return (
     <main className="main-page">
@@ -56,58 +58,25 @@ const MainPage = () => {
           },
         }}
       >
-        <SwiperSlide>
-          <Link to="/TourDetails">
-            <div className="each-tour">
-              <img src={tour1} className="tour-image" alt="Tour" />
-              <h2 className="tour-heading">NORTHEN LIGHTS</h2>
-              <Dots />
-              <p className="tour-detail">
-                This is an amazing place in North of Canada which gathers people
-                attention from all over the World.
-              </p>
-            </div>
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link to="/TourDetails">
-            <div className="each-tour">
-              <img src={tour2} className="tour-image" alt="Tour" />
-              <h2 className="tour-heading">NORTHEN LIGHTS</h2>
-              <Dots />
-              <p className="tour-detail">
-                This is an amazing place in North of Canada which gathers people
-                attention from all over the World
-              </p>
-            </div>
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link to="/TourDetails">
-            <div className="each-tour">
-              <img src={tour3} className="tour-image" alt="Tour" />
-              <h2 className="tour-heading">NORTHEN LIGHTS</h2>
-              <Dots />
-              <p className="tour-detail">
-                This is an amazing place in North of Canada which gathers people
-                attention from all over the World
-              </p>
-            </div>
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link to="/TourDetails">
-            <div className="each-tour">
-              <img src={tour4} className="tour-image" alt="Tour" />
-              <h2 className="tour-heading">NORTHEN LIGHTS</h2>
-              <Dots />
-              <p className="tour-detail">
-                This is an amazing place in North of Canada which gathers people
-                attention from all over the World
-              </p>
-            </div>
-          </Link>
-        </SwiperSlide>
+        {tours.map((tour) => (
+          <SwiperSlide key={tour.id}>
+            <Link to={`/tours/${tour.id}`}>
+              <div className="each-tour">
+                <img src={tour.photo} className="tour-image" alt="Tour" />
+                <h2 className="tour-heading">
+                  {tour.title.length > 20
+                    ? `${tour.title.substr(0, 50)}...`
+                    : tour.title}
+                </h2>
+                <Dots />
+                <p className="tour-detail">{`${tour.description.substr(
+                  0,
+                  50,
+                )}...`}</p>
+              </div>
+            </Link>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </main>
   );

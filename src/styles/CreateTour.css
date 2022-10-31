@@ -2,11 +2,11 @@
   background-color: #97bf0f;
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 70%;
   z-index: 14;
+  margin-left: 30%;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -67,21 +67,11 @@
   height: 100px;
 }
 
-.TourForm *::placeholder {
-  font-style: italic;
-  font-weight: 200;
-  color: white;
-}
-
 .TourForm button {
   background-color: white;
   border: none;
   color: #97bf0f;
   font-size: 20px;
-}
-
-.add-tour-btn {
-  cursor: pointer;
 }
 
 .form-column textarea::-webkit-scrollbar {
@@ -92,8 +82,33 @@
   display: none;
 }
 
+.TourForm input:hover,
+.TourForm textarea:hover,
+.TourForm button:hover {
+  border: 2px solid white;
+  box-shadow: inset 0 0 15px 0 greenyellow;
+}
+
+.TourForm input:focus,
+.TourForm textarea:focus,
+.TourForm button:focus {
+  outline: none;
+}
+
+.TourForm *::placeholder {
+  font-style: italic;
+  font-weight: 200;
+  color: white;
+}
+
+.add-tour-btn {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .tour-content {
+    width: 100%;
+    margin-left: 0;
     z-index: 9;
   }
 

@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 import CryptoJS from 'crypto-js';
-import { useDispatch } from 'react-redux';
+
 import { addUSER } from './redux/user/user';
 import Nav from './components/Nav';
 import MainPage from './components/MainPage';
@@ -29,13 +30,13 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="/SignUp" element={<SignUpPage />} />
-        <Route path="/LogIn" element={<LogInPage />} />
-        <Route path="/CreateTour" element={<CreateTour />} />
-        <Route path="/DeleteTours" element={<DeleteTours />} />
-        <Route path="/tourDetails" element={<TourDetails />} />
-        <Route path="/reservations" element={<Reservation />} />
         <Route path="/" element={<MainPage />} />
+        <Route path="/tours/:tourID" element={<TourDetails />} />
+        <Route path="/tours/delete" element={<DeleteTours />} />
+        <Route path="/tours/create" element={<CreateTour />} />
+        <Route path="/tours/reserve" element={<Reservation />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/login" element={<LogInPage />} />
       </Routes>
     </>
   );
