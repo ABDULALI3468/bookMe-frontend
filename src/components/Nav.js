@@ -18,8 +18,13 @@ const Nav = () => {
   const dispatch = useDispatch();
   const navRef = useRef();
   const [isHide, setHide] = useState(false);
+
   const showHideNavbar = () => {
-    navRef.current.classList.toggle('hidden');
+    if (window.innerWidth >= 768) {
+      navRef.current.classList.toggle('a');
+    } else {
+      navRef.current.classList.toggle('hidden');
+    }
   };
 
   const logoutUser = (e) => {
@@ -47,12 +52,12 @@ const Nav = () => {
             </NavLink>
           </button>
           <button type="button" className="nav-item">
-            <NavLink onClick={showHideNavbar} to="/tours/reserve">
+            <NavLink onClick={showHideNavbar} to="/tours/reservations">
               My reservations
             </NavLink>
           </button>
           <button type="button" className="nav-item">
-            <NavLink onClick={showHideNavbar} to="/tours/reserve">
+            <NavLink onClick={showHideNavbar} to="/tours/reservation-form">
               Reserver Tour
             </NavLink>
           </button>
@@ -82,28 +87,28 @@ const Nav = () => {
 
         <div className="nav-footer">
           <ul className="links-container">
-            <li className="links">
-              <NavLink to="/">
+            <li className="links contacts">
+              <a href="https://github.com/NatiDeme">
                 <BsGithub className="links" />
-              </NavLink>
+              </a>
             </li>
-            <li className="links">
-              <NavLink to="/">
+            <li className="links contacts">
+              <a href="https://www.linkedin.com/in/abdul-ali-5400bb216/">
                 <BsLinkedin className="links" />
-              </NavLink>
+              </a>
             </li>
-            <li className="links">
-              <NavLink to="/">
+            <li className="links contacts">
+              <a href="https://angel.co/u/taiwo-damola-adediran">
                 <FaAngellist className="links" />
-              </NavLink>
+              </a>
             </li>
-            <li className="links">
-              <NavLink to="/">
+            <li className="links contacts">
+              <a href="https://twitter.com/divine_maina">
                 <BsTwitter className="links" />
-              </NavLink>
+              </a>
             </li>
           </ul>
-          <h1 className="heading">&#169; 2015 PIAGIO & C.S.P.A - P.IVA</h1>
+          <h1 className="heading">&#169; 2022 All rights reserved</h1>
         </div>
       </nav>
     </>

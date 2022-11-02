@@ -28,11 +28,11 @@ const TourDetails = () => {
   return (
     <div className="tour-details-container">
       <div className="tour-image-container">
-        <img className="tours-image" src={tour.photo} alt="Tour" />
+        <img className="tours-image" src={tour.image} alt="Tour" />
       </div>
 
       <div className="tour-details">
-        <h1 className="tour-heading">{tour.title}</h1>
+        <h1 className="tour-heading">{tour.name}</h1>
         <p className="tour-exp">{tour.description}</p>
         <ul className="specifications">
           <li className="spec">
@@ -45,7 +45,7 @@ const TourDetails = () => {
           </li>
           <li className="spec">
             Cost
-            <span className="spec-info">{tour.cost}</span>
+            <span className="spec-info">{tour.price}</span>
           </li>
           <li className="spec">
             Available Now
@@ -54,7 +54,7 @@ const TourDetails = () => {
         </ul>
         <button type="button" className="reserve-button">
           <FiSettings className="reserve-symbol-1" />
-          <Link to="/tours/reserve">Reserve</Link>
+          <Link to="/tours/reservation-form">Reserve</Link>
           <AiFillRightCircle className="reserve-symbol-2" />
         </button>
       </div>
