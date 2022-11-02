@@ -64,9 +64,19 @@
   width: 85%;
   line-height: 25px;
   letter-spacing: 0.07em;
-  color: #b7b3b3;
+  color: #0c0909;
   font-size: 14px;
   margin-bottom: 4rem;
+}
+
+.no-tours {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20vh;
+  text-decoration: underline;
+  color: #b56666;
+  font-size: 1.8rem;
+  line-height: 3rem;
 }
 
 @media screen and (min-width: 768px) {
