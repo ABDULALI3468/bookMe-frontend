@@ -4,6 +4,8 @@
 
 > **This is an app in wich you can reserve a tour, create a tour, delete a tour and show all your reserved tours. This app was created separating the Fron-End and the Back-End in two repositories. This is the repository of the front-end API.**
 
+## LINK TO THE BACKEND REPO
+[TOURIFY-BACKEND](https://github.com/NatiDeme/tour-booking-backend)
 
 ## Live Demo
 [Link Live Demo]()
@@ -38,12 +40,17 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
+👤 **CHARLOTTE DIVINE**
+
+> * This is My **GitHub**: ![GitHub followers](https://img.shields.io/github/followers/divinecharlotte?label=DIVINECHARLOTTE&style=social)
+> * This is My **Linkedin**: [![Linkedin Badge](https://img.shields.io/badge/-DIVINE%20CHARLOTTE-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/charlotte-divine-dusenge/)](https://www.linkedin.com/in/abdul-ali-5400bb216/)&nbsp;
+> * This is My **Twitter**: [![Twitter Badge](https://img.shields.io/badge/-@divine_maina_-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/divine_maina)](https://twitter.com/divine_maina)&nbsp;
+
 👤 **ABDUL ALI**
 
 > * This is My **GitHub**: ![GitHub followers](https://img.shields.io/github/followers/ABDULALI3468?label=ABDULALI&style=social)
 > * This is My **Linkedin**: [![Linkedin Badge](https://img.shields.io/badge/-ABDUL%20ALI-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/abdul-ali-5400bb216/)](https://www.linkedin.com/in/abdul-ali-5400bb216/)&nbsp;
 > * This is My **Twitter**: [![Twitter Badge](https://img.shields.io/badge/-@mrabdul_ali_-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/mrabdul_ali)](https://twitter.com/mrabdul_ali)&nbsp;
-
 
 ## 🤝 Contributing
 
