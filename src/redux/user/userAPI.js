@@ -1,7 +1,7 @@
 import { addUSER, removeUSER } from './user';
 
-const SIGNUP = 'https://tourify-app.herokuapp.com/users';
-const LOGIN = 'https://tourify-app.herokuapp.com/auth/login';
+const SIGNUP = 'https://booking-tour-app.herokuapp.com/signup';
+const LOGIN = 'https://booking-tour-app.herokuapp.com/login';
 
 export const login = (data) => async (dispatch) => {
   const response = await fetch(LOGIN, {
