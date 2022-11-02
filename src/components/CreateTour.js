@@ -15,12 +15,12 @@ const CreateTour = () => {
   }, [navigate, user]);
 
   const newTour = {
-    title: '',
+    name: '',
     duration: '',
     description: '',
     city: '',
-    cost: '',
-    photo: '',
+    price: '',
+    image: '',
   };
 
   const [state, setState] = useState(newTour);
@@ -48,19 +48,19 @@ const CreateTour = () => {
   return (
     <div className="tour-content">
       <h1>CREATE A TOUR</h1>
-      <p>
+      {/* <p>
         Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
         <br />
         consectetur, adipisci velit... There is no one who loves pain itself,
         who seeks after it and w
-      </p>
+      </p> */}
       <form className="TourForm" onSubmit={submitForm}>
         <div className="form-column">
           <input
             type="text"
             placeholder="Tour Title"
-            value={state.title}
-            onChange={(e) => setState({ ...state, title: e.target.value })}
+            value={state.name}
+            onChange={(e) => setState({ ...state, name: e.target.value })}
             required
           />
           <input
@@ -90,15 +90,15 @@ const CreateTour = () => {
             <input
               type="number"
               placeholder="Cost"
-              value={state.cost}
-              onChange={(e) => setState({ ...state, cost: e.target.value })}
+              value={state.price}
+              onChange={(e) => setState({ ...state, price: e.target.value })}
               required
             />
             <input
               type="url"
               placeholder="Photo URL"
-              value={state.photo}
-              onChange={(e) => setState({ ...state, photo: e.target.value })}
+              value={state.image}
+              onChange={(e) => setState({ ...state, image: e.target.value })}
               required
             />
           </div>

@@ -15,13 +15,14 @@
 }
 
 .tour-image-container {
+  width: 100%;
   margin-top: 30px;
 }
 
 .tours-image {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 90%;
+  height: auto;
+  margin-top: 300px;
   margin-bottom: 2rem;
   box-shadow: 0 0 15px 0 black;
 }
@@ -114,19 +115,18 @@
   }
 
   .tour-image-container {
+    width: 50%;
     margin-top: 0;
   }
 
   .tours-image {
-    width: calc(60% - 2rem);
+    height: 500px;
+    margin-top: 0;
     margin-left: 2rem;
     border-radius: 0;
-    height: auto;
   }
 
   .tour-details {
     width: 40%;
-    position: absolute;
-    right: 0;
   }
 }
