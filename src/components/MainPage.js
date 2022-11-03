@@ -13,7 +13,6 @@ import { fetchApiDataTours } from '../redux/tours/toursAPI';
 import '../styles/main.css';
 import Dots from './Dots';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
