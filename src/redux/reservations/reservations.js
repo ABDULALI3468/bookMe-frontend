@@ -64,7 +64,6 @@ export const PostReservationsAPI = (data, token) => async () => {
     body: JSON.stringify(data),
   });
   if (response.status === 201) {
-    // alert('Your Reservation Created Successfully!');
     GetReservationsAPI();
   } else {
     alert('OOPS! Your Reservation DID NOT Created!');
