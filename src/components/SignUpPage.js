@@ -19,7 +19,6 @@ const SignUp = () => {
       ...value,
       [e.target.id]: e.target.value,
     });
-    console.log(value);
   };
 
   const createUser = (e) => {
