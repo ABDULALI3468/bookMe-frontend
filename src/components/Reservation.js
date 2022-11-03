@@ -25,7 +25,6 @@ const Reservation = () => {
 
   const onChange = (e) => {
     setValue({ ...value, [e.target.id]: e.target.value });
-    console.log(value);
   };
 
   const dispatch = useDispatch();
