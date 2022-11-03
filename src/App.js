@@ -17,8 +17,7 @@ import './styles/index.css';
 
 const MainPage = lazy(() => import('./components/MainPage'));
 
-  const App = () => {
-
+const App = () => {
   const loggedUser = localStorage.getItem('user');
   const dispatch = useDispatch();
 
@@ -47,7 +46,6 @@ const MainPage = lazy(() => import('./components/MainPage'));
       </Suspense>
     </>
   );
-}
+};
 
 export default App;
-
