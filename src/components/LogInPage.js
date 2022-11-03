@@ -21,7 +21,6 @@ const Login = () => {
       ...value,
       [e.target.id]: e.target.value,
     });
-    console.log(value);
   };
 
   const loginUser = (e) => {
