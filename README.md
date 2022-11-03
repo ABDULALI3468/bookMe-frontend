@@ -4,6 +4,8 @@
 
 > **This is an app in wich you can reserve a tour, create a tour, delete a tour and show all your reserved tours. This app was created separating the Fron-End and the Back-End in two repositories. This is the repository of the front-end API.**
 
+## LINK TO THE BACKEND REPO
+[TOURIFY-BACKEND](https://github.com/NatiDeme/tour-booking-backend)
 
 ## Live Demo
 [Link Live Demo]()
