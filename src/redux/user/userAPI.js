@@ -23,7 +23,6 @@ export const signup = (data, navigate) => async () => {
     body: JSON.stringify(data),
     headers: { 'Content-Type': 'application/json' },
   });
-  console.log(response.status);
 
   if (response.status !== 201) {
     alert('Your Sign Up Request was not successful');
