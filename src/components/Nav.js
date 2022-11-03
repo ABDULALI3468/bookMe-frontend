@@ -3,7 +3,6 @@
 /* eslint-disable implicit-arrow-linebreak */
 import { React, useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import { NavLink } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { FaAngellist } from 'react-icons/fa';
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
