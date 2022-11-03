@@ -25,10 +25,6 @@ const SignUp = () => {
   const createUser = (e) => {
     e.preventDefault();
     dispatch(signup(value, navigate));
-    // navigate('/login');
-    // if (dispatch(signup(value))) {
-    //   navigate('/login');
-    // }
   };
 
   useEffect(() => {
