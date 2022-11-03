@@ -33,7 +33,6 @@ const DeleteTours = () => {
   const deleteTour = (id) => {
     if (user.length > 0) {
       dispatch(deleteTourApi(id, user[0].token));
-      console.log(tours.length);
     }
   };
 
