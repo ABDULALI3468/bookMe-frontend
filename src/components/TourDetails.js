@@ -10,7 +10,6 @@ import '../styles/tourDetails.css';
 import { FiSettings } from 'react-icons/fi';
 import { AiFillRightCircle } from 'react-icons/ai';
 import { GetToursAPI } from '../redux/tours/toursAPI';
-// import tour3 from '../assets/images/tour3.jpeg';
 
 const TourDetails = () => {
   const { tourID } = useParams();
