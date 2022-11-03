@@ -18,11 +18,22 @@ const DeleteTours = () => {
     } else {
       navigate('/tours/delete');
     }
-  }, [navigate, user.length]);
+  }, [navigate, user]);
+
+  useEffect(() => {
+    if (tours.length < 1) {
+      navigate('/');
+    }
+  }, [navigate, tours]);
+
+  useEffect(() => {
+    dispatch(fetchApiDataTours());
+  }, [dispatch, fetchApiDataTours, tours]);
 
   const deleteTour = (id) => {
     if (user.length > 0) {
       dispatch(deleteTourApi(id, user[0].token));
+      console.log(tours.length);
     }
   };
 
@@ -30,19 +41,15 @@ const DeleteTours = () => {
     document.title = 'Delete Tours';
   }, []);
 
-  useEffect(() => {
-    dispatch(fetchApiDataTours());
-  }, [dispatch]);
-
   return (
     <div className="delete-tour">
       <div className="tour-container">
         {tours.map((tour) => (
           <div className="tour-element" key={tour.id}>
-            <img className="tour-del-image" src={tour.photo} alt="tour" />
+            <img className="tour-del-image" src={tour.image} alt="tour" />
             <div className="tour-overlay"></div>
             <div className="midle">
-              <h2 className="tour-heading">{`${tour.title.substr(
+              <h2 className="tour-heading">{`${tour.name.substr(
                 0,
                 40,
               )}...`}</h2>

@@ -2,12 +2,14 @@
 
 import { configureStore } from '@reduxjs/toolkit';
 import { tourReducer } from './tours/tours';
+import { reservationReducer } from './reservations/reservations';
 import { userReducer } from './user/user';
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    user: userReducer,
     tours: tourReducer,
+    reservations: reservationReducer,
+    user: userReducer,
   },
 });
 

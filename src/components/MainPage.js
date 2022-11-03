@@ -4,6 +4,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 // import Swiper for carrousel
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -21,6 +22,7 @@ const MainPage = () => {
   const user = useSelector((store) => store.user);
   const tours = useSelector((store) => store.tours);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     dispatch(fetchApiDataTours());
@@ -62,11 +64,11 @@ const MainPage = () => {
           <SwiperSlide key={tour.id}>
             <Link to={`/tours/${tour.id}`}>
               <div className="each-tour">
-                <img src={tour.photo} className="tour-image" alt="Tour" />
+                <img src={tour.image} className="tour-image" alt="Tour" />
                 <h2 className="tour-heading">
-                  {tour.title.length > 20
-                    ? `${tour.title.substr(0, 50)}...`
-                    : tour.title}
+                  {tour.name.length > 20
+                    ? `${tour.name.substr(0, 50)}...`
+                    : tour.name}
                 </h2>
                 <Dots />
                 <p className="tour-detail">{`${tour.description.substr(
@@ -78,6 +80,21 @@ const MainPage = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {tours.length === 0 ? (
+        <>
+          <p className="no-tours">WE ARE SORRY CURRENTLY NO TOURS AVAILABLE</p>
+          <button
+            type="button"
+            className="reservation-link"
+            onClick={() => navigate('/tours/create')}
+          >
+            Plan a Tour!
+          </button>
+        </>
+      ) : (
+        ''
+      )}
     </main>
   );
 };

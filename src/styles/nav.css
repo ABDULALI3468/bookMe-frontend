@@ -1,5 +1,5 @@
 .nav {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -94,6 +94,15 @@
   font-size: 0.8rem;
   margin-top: 1rem;
   color: grey;
+}
+
+.contacts a:hover {
+  background-color: wheat;
+  padding: 0;
+
+  /* border-radius: ; */
+  text-decoration: none;
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 768px) {
