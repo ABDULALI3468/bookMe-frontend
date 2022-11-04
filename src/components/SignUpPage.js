@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { signup } from '../redux/user/userAPI';
-import  profile from '../assets/images/profile.png'
+import profile from '../assets/images/profile.png';
 import '../styles/SignUpPage.css';
 
 const SignUp = () => {
