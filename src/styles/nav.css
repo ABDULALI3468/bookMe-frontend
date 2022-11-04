@@ -99,8 +99,6 @@
 .contacts a:hover {
   background-color: wheat;
   padding: 0;
-
-  /* border-radius: ; */
   text-decoration: none;
   transform: scale(1.2);
 }

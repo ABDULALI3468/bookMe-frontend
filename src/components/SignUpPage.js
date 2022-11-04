@@ -19,16 +19,11 @@ const SignUp = () => {
       ...value,
       [e.target.id]: e.target.value,
     });
-    console.log(value);
   };
 
   const createUser = (e) => {
     e.preventDefault();
     dispatch(signup(value, navigate));
-    // navigate('/login');
-    // if (dispatch(signup(value))) {
-    //   navigate('/login');
-    // }
   };
 
   useEffect(() => {

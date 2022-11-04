@@ -9,7 +9,6 @@ export const login = (data) => async (dispatch) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
   });
-  console.log(response.status);
   if (response.status === 200) {
     const data = await response.json();
     dispatch(addUSER(data));
@@ -24,7 +23,6 @@ export const signup = (data, navigate) => async () => {
     body: JSON.stringify(data),
     headers: { 'Content-Type': 'application/json' },
   });
-  console.log(response.status);
 
   if (response.status !== 201) {
     alert('Your Sign Up Request was not successful');

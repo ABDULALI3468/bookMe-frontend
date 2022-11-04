@@ -2,18 +2,19 @@
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable object-curly-newline */
 /* eslint-disable react/jsx-one-expression-per-line */
-import React, { useEffect } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
-// import Swiper for carrousel
+
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { getApiDataTour } from '../redux/tours/tours';
 import { fetchApiDataTours } from '../redux/tours/toursAPI';
 import '../styles/main.css';
 import Dots from './Dots';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

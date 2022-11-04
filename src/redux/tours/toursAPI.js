@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { getApiDataTour, getApiDataTourDetail, removeTour } from './tours';
 
 const URL = 'https://booking-tour-app.herokuapp.com/tours';

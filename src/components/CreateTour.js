@@ -48,12 +48,6 @@ const CreateTour = () => {
   return (
     <div className="tour-content">
       <h1>CREATE A TOUR</h1>
-      {/* <p>
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-        <br />
-        consectetur, adipisci velit... There is no one who loves pain itself,
-        who seeks after it and w
-      </p> */}
       <form className="TourForm" onSubmit={submitForm}>
         <div className="form-column">
           <input

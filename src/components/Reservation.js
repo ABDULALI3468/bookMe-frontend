@@ -25,10 +25,7 @@ const Reservation = () => {
 
   const onChange = (e) => {
     setValue({ ...value, [e.target.id]: e.target.value });
-    console.log(value);
   };
-
-  // const con = () => console.log('BUTTON RESERVE');
 
   const dispatch = useDispatch();
   const Store = useSelector((store) => store.tours);
@@ -76,7 +73,6 @@ const Reservation = () => {
             className="reservation-input"
             min="1"
             placeholder="Number of Persons"
-            // onChange={onChange}
             required
           />
           <select
