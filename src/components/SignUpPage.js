@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { signup } from '../redux/user/userAPI';
+import  profile from '../assets/images/profile.png'
 import '../styles/SignUpPage.css';
 
 const SignUp = () => {
@@ -32,6 +33,7 @@ const SignUp = () => {
 
   return (
     <div className="signup">
+      <img src={profile} alt="profile" className="profile" />
       <h1>Sign Up</h1>
       <form className="signup-form" onSubmit={createUser}>
         <input
