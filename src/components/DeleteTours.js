@@ -41,7 +41,12 @@ const DeleteTours = () => {
     <div className="delete-tour">
       <div className="tour-container">
         {tours.map((tour) => (
-          <div className="tour-element" key={tour.id}>
+          <div
+            className={`${
+              user[0].user.user_id === tour.user_id ? 'tour-element' : 'disable'
+            }`}
+            key={tour.id}
+          >
             <img className="tour-del-image" src={tour.image} alt="tour" />
             <div className="tour-overlay"></div>
             <div className="midle">
@@ -54,13 +59,7 @@ const DeleteTours = () => {
                 50,
               )}...`}</p>
               {user.length > 0 ? (
-                <button
-                  type="button"
-                  className={`${
-                    user[0].user.user_id === tour.user_id ? 'disable' : ''
-                  }`}
-                  onClick={() => deleteTour(tour.id)}
-                >
+                <button type="button" onClick={() => deleteTour(tour.id)}>
                   Delete
                 </button>
               ) : (
