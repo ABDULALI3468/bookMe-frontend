@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable no-unused-vars */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router';
 import { deleteTourApi, fetchApiDataTours } from '../redux/tours/toursAPI';
@@ -12,6 +12,14 @@ const DeleteTours = () => {
   const tours = useSelector((store) => store.tours);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const filteredTours = tours.filter(
+    (tour) => user[0].user.user_id === tour.user_id,
+  );
+
+  useEffect(() => {
+    dispatch(fetchApiDataTours());
+  }, [dispatch]);
 
   useEffect(() => {
     if (user.length === 0) {
@@ -37,38 +45,49 @@ const DeleteTours = () => {
     document.title = 'Delete Tours';
   }, []);
 
-  return (
-    <div className="delete-tour">
-      <div className="tour-container">
-        {tours.map((tour) => (
-          <div
-            className={`${
-              user[0].user.user_id === tour.user_id ? 'tour-element' : 'disable'
-            }`}
-            key={tour.id}
-          >
-            <img className="tour-del-image" src={tour.image} alt="tour" />
-            <div className="tour-overlay"></div>
-            <div className="midle">
-              <h2 className="tour-heading">{`${tour.name.substr(
-                0,
-                40,
-              )}...`}</h2>
-              <p className="tour-detail">{`${tour.description.substr(
-                0,
-                50,
-              )}...`}</p>
-              {user.length > 0 ? (
-                <button type="button" onClick={() => deleteTour(tour.id)}>
-                  Delete
-                </button>
-              ) : (
-                ''
-              )}
+  if (filteredTours.length > 0) {
+    return (
+      <div className="delete-tour">
+        <div className="tour-container">
+          {tours.map((tour) => (
+            <div key={tour.id}>
+              <img className="tour-del-image" src={tour.image} alt="tour" />
+              <div className="tour-overlay"></div>
+              <div className="midle">
+                <h2 className="tour-heading">{`${tour.name.substr(
+                  0,
+                  40,
+                )}...`}</h2>
+                <p className="tour-detail">{`${tour.description.substr(
+                  0,
+                  50,
+                )}...`}</p>
+                {user.length > 0 ? (
+                  <button type="button" onClick={() => deleteTour(tour.id)}>
+                    Delete
+                  </button>
+                ) : (
+                  ''
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+    );
+  }
+  return (
+    <div className="no-reservations">
+      <p>
+        You have no Tours under your Ownership. Please consider creating one!
+      </p>
+      <button
+        type="button"
+        className="reservation-link"
+        onClick={() => navigate('/tours/create')}
+      >
+        Consider planing a Tour
+      </button>
     </div>
   );
 };
