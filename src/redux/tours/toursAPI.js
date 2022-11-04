@@ -45,7 +45,7 @@ export const deleteTourApi = (id, token) => async (dispatch) => {
       Authorization: token,
     },
   });
-  if (response.status === 204) {
+  if (response.status === 200) {
     dispatch(removeTour(id));
   }
 };
