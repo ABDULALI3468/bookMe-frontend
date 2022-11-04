@@ -33,38 +33,40 @@ const SignUp = () => {
 
   return (
     <div className="signup">
-      <img src={profile} alt="profile" className="profile" />
-      <h1>Sign Up</h1>
-      <form className="signup-form" onSubmit={createUser}>
-        <input
-          type="text"
-          placeholder="Name"
-          id="name"
-          required
-          onChange={onChange}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          id="email"
-          required
-          onChange={onChange}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          id="password"
-          required
-          onChange={onChange}
-        />
-        <button type="submit" value="add-tour">
-          Register
-        </button>
-      </form>
-      <div className="form-links">
-        <h3>Do you have an account?</h3>
-        <p>you may Login!</p>
-        <Link to="/login">Login</Link>
+      <div className="signup-wrapper">
+        <img src={profile} alt="profile" className="profile" />
+        <h1>Sign Up</h1>
+        <form className="signup-form" onSubmit={createUser}>
+          <input
+            type="text"
+            placeholder="Name"
+            id="name"
+            required
+            onChange={onChange}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            required
+            onChange={onChange}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            required
+            onChange={onChange}
+          />
+          <button type="submit" value="add-tour">
+            Register
+          </button>
+        </form>
+        <div className="form-links">
+          <h3>Do you have an account?</h3>
+          <p>you may Login!</p>
+          <Link to="/login">Login</Link>
+        </div>
       </div>
     </div>
   );
