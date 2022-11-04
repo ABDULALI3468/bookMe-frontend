@@ -50,7 +50,7 @@ const DeleteTours = () => {
       <div className="delete-tour">
         <div className="tour-container">
           {tours.map((tour) => (
-            <div key={tour.id}>
+            <div key={tour.id} className="tour-element">
               <img className="tour-del-image" src={tour.image} alt="tour" />
               <div className="tour-overlay"></div>
               <div className="midle">
