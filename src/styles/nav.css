@@ -1,0 +1,114 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transition: 0.85s all ease;
+  background-color: white;
+  z-index: 10;
+  box-shadow: inset 0 0 20px 0 grey;
+}
+
+.hidden {
+  left: -1000px;
+}
+
+.close-nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1rem;
+  z-index: 15;
+}
+
+.app-logo {
+  width: 100px;
+  height: 100px;
+  margin: 2rem;
+}
+
+.nav-items {
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: white;
+  margin-top: 5rem;
+}
+
+.nav-item {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  color: black;
+  background-color: white;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 1.3rem;
+  font-weight: 500;
+}
+
+.nav-item:nth-child(odd) {
+  background: #97bf0f;
+  color: white;
+}
+
+.sign-out-button {
+  position: fixed;
+  bottom: 13%;
+  height: 3rem;
+  width: 10rem;
+  font-size: 20px;
+  background-color: #97bf0f;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 27px;
+}
+
+.nav-footer {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.links-container li {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.links {
+  color: grey;
+}
+
+.heading {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: grey;
+}
+
+.contacts a:hover {
+  background-color: wheat;
+  padding: 0;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    width: 30%;
+  }
+
+  .close-nav {
+    display: none;
+  }
+}

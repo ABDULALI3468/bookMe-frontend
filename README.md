@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tourify
 
-## Available Scripts
+> **This is an app in wich you can reserve a tour, create a tour, delete a tour and show all your reserved tours. This app was created separating the Fron-End and the Back-End in two repositories. This is the repository of the front-end API.**
 
-In the project directory, you can run:
+<img src="https://i.imgur.com/Gus9sKi.png" style="width: 70%;margin-top: 5rem;" alt="Project Presentation" />
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## LINK TO THE BACKEND REPO
+[TOURIFY-BACKEND](https://github.com/NatiDeme/tour-booking-backend)
 
-### `npm test`
+## Live Demo
+[Link Live Demo](https://book-tours.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Kanban Board
 
-### `npm run build`
+ 1- [Link to Kanban Board.](https://github.com/NatiDeme/tour-booking-backend/projects/1)
+ 
+ <img src="https://user-images.githubusercontent.com/94223367/199873332-fd843701-2b60-4d6b-ab91-4ae8d036e17d.png" style="width: 70%;margin-top: 5rem;" alt="Kanban Board" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML
+- CSS
+- JavaScript
+- Ract
+- Redux
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To get a local copy up and running follow these simple example steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Clone the repository using the next link: https://github.com/ABDULALI3468/bookMe-frontend.git
+- With your code editor open the folder where you cloned the project.
+- In your code editor terminal run `npm install` to install all the dependencies needed.
+- In your code editor terminal run `npm start` to start the local server.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Number of Team Mates:- 
+This project was build with 2 teams Backend and Front End. Our team constitutes of 4 participants. The following are the list of Authors differentiated as worked in teams and their roles.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### FRONT END TEAM: 
 
-### Code Splitting
+👤 **ABDUL ALI (TEAM LEADER) **
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> * This is My **GitHub**: ![GitHub followers](https://img.shields.io/github/followers/ABDULALI3468?label=ABDULALI&style=social)
+> * This is My **Linkedin**: [![Linkedin Badge](https://img.shields.io/badge/-ABDUL%20ALI-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/abdul-ali-5400bb216/)](https://www.linkedin.com/in/abdul-ali-5400bb216/)&nbsp;
+> * This is My **Twitter**: [![Twitter Badge](https://img.shields.io/badge/-@mrabdul_ali_-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/mrabdul_ali)](https://twitter.com/mrabdul_ali)&nbsp;
 
-### Analyzing the Bundle Size
+👤 **CHARLOTTE DIVINE**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> * This is My **GitHub**: ![GitHub followers](https://img.shields.io/github/followers/divinecharlotte?label=DIVINECHARLOTTE&style=social)
+> * This is My **Linkedin**: [![Linkedin Badge](https://img.shields.io/badge/-DIVINE%20CHARLOTTE-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/charlotte-divine-dusenge/)](https://www.linkedin.com/in/abdul-ali-5400bb216/)&nbsp;
+> * This is My **Twitter**: [![Twitter Badge](https://img.shields.io/badge/-@divine_maina_-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/divine_maina)](https://twitter.com/divine_maina)&nbsp;
 
-### Making a Progressive Web App
+### BACK END TEAM: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+👤 **Natnael Demelash (TEAM LEADER) **
 
-### Advanced Configuration
+- GitHub: [@githubhandle](https://github.com/NatiDeme)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/natnael-demelash/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+👤 **Taiwo Damola Adediran**
 
-### Deployment
+- GitHub: [@githubhandle](https://github.com/tylher)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/taiwo-adediran-327654127/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/ABDULALI3468/bookMe-frontend.git/issues).
+
+## Acknowledgments
+
+- Original design idea by [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

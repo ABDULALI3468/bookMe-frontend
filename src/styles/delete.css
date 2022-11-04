@@ -1,0 +1,106 @@
+.delete-tour {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 30%);
+  margin-left: 30%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: aliceblue;
+  box-shadow: inset 0 0 15px 0 #db7f64;
+}
+
+.tour-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
+  background: #e5f3ff;
+  overflow: auto;
+}
+
+.tour-element {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 10px;
+  border-radius: 100vh;
+  height: 300px;
+  width: 300px;
+}
+
+.tour-del-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px 0 green;
+}
+
+.tour-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+
+.midle {
+  position: absolute;
+  top: 36%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tour-detail {
+  width: 86%;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #4c2b2b;
+  font-size: 16px;
+  margin: 1px 0;
+}
+
+.midle button {
+  padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  background-color: inherit;
+  color: white;
+  font-weight: 900;
+  font-size: 16px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px 0 black;
+}
+
+.disable {
+  display: none;
+}
+
+.delete-btn {
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .delete-tour {
+    margin-left: 0;
+    width: 100%;
+  }
+}

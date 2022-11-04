@@ -1,0 +1,132 @@
+.tour-details-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(0, 208, 255);
+  box-shadow: inset 0 0 15px 0 #db7f64;
+}
+
+.tour-image-container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.tours-image {
+  width: 90%;
+  height: auto;
+  margin-top: 300px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px 0 black;
+}
+
+.tour-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour-heading {
+  font-size: 32px;
+}
+
+.tour-exp {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  width: 90%;
+  margin: 32px 0 32px 0;
+  font-weight: 300;
+}
+
+.specifications {
+  width: 90%;
+  text-align: center;
+  list-style-type: none;
+}
+
+.spec {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 6%;
+}
+
+.spec:nth-child(odd) {
+  background: hsl(0deg 0% 95%);
+}
+
+.spec-info {
+  position: absolute;
+  right: 6%;
+}
+
+.reserve-button {
+  height: 3.5rem;
+  width: 11rem;
+  font-size: 20px;
+  background-color: #97bf0f;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.reserve-symbol-1 {
+  position: absolute;
+  left: 1rem;
+  font-size: 26px;
+}
+
+.reserve-symbol-2 {
+  position: absolute;
+  right: 1rem;
+  font-size: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  .tour-details-container {
+    width: calc(100% - 30%);
+    margin-left: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tour-details-container {
+    width: calc(100% - 30%);
+    margin-left: 30%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+
+  .tour-image-container {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .tours-image {
+    height: 500px;
+    margin-top: 0;
+    margin-left: 2rem;
+    border-radius: 0;
+  }
+
+  .tour-details {
+    width: 40%;
+  }
+}

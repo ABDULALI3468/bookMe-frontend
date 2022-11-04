@@ -1,0 +1,146 @@
+.show-reservation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+}
+
+.reservation-container {
+  position: relative;
+  width: 90%;
+  height: 360px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 25px 0 grey;
+}
+
+.reservation-image {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  border-radius: 40px;
+  transition: 0.5s all ease-in-out;
+  opacity: 0.7;
+}
+
+.reservation-image:hover {
+  transform: scale(2);
+}
+
+.reservation-details {
+  position: absolute;
+  top: 60%;
+  left: -3%;
+  height: 62%;
+  border-radius: 43px;
+  width: 109%;
+  background:
+    linear-gradient(
+      135deg,
+      rgb(153, 210, 228) 0%,
+      rgb(255 93 250) 100%
+    );
+  transform: rotate(-13deg);
+}
+
+.reservation-headline {
+  position: relative;
+  padding-left: 1rem;
+  left: 7%;
+  top: -12%;
+  transform: rotate(13deg);
+  width: 50%;
+  font-size: 23px;
+  color: rgb(255 93 250);
+  text-align: left;
+  text-shadow: #fff 1px 0 10px;
+}
+
+.reservation-description {
+  position: absolute;
+  right: 14px;
+  top: 20%;
+  transform: rotate(13deg);
+  width: 46%;
+  font-size: 15px;
+  color: white;
+}
+
+.reservation-city {
+  position: relative;
+  left: 7%;
+  top: 4%;
+  transform: rotate(13deg);
+  color: #1b6cb3;
+  width: 50%;
+  font-size: 19px;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.cancel-reservation {
+  position: absolute;
+  right: 28px;
+  bottom: 31%;
+  transform: rotate(13deg);
+  width: 50%;
+  font-size: 18px;
+  border-bottom-right-radius: 45px;
+  border-top-left-radius: 45px;
+}
+
+.no-reservations {
+  color: #b56666;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  justify-content: flex-start;
+  margin-top: 10rem;
+  width: 90%;
+  height: 100%;
+  padding-top: 8rem;
+}
+
+.no-reservations > p {
+  text-decoration: underline;
+}
+
+.reservation-link {
+  height: 3rem;
+  width: 15rem;
+  font-size: 20px;
+  background-color: #97bf0f;
+  color: white;
+  border: none;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  border-radius: 27px;
+}
+
+@media screen and (min-width: 768px) {
+  .show-reservation-container {
+    width: calc(100% - 30%);
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 30%;
+  }
+
+  .reservation-container {
+    width: 40%;
+    margin: 1%;
+  }
+
+  .reservation-image {
+    height: 100%;
+  }
+
+  .no-reservations {
+    width: calc(100% - 30%);
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 30%;
+  }
+}
