@@ -12,7 +12,7 @@
 .login-wrapper {
   height: 70%;
   width: 70%;
-  padding-top: 9%;
+  padding-top: 3%;
   margin: 10% auto;
   background-color: #8caa2a;
 }
@@ -31,6 +31,11 @@
   width: 70%;
   margin: 0 20% 20px 15%;
 }
+
+.login-form input:focus{
+  background-color: rgb(247, 241, 241);
+}
+
 
 .login-form > *::placeholder {
   font-weight: bolder;

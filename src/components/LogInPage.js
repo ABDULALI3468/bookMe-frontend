@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { login } from '../redux/user/userAPI';
+import  profile from '../assets/images/profile.png'
 import '../styles/LogInPage.css';
 
 const CriptoJS = require('crypto-js');
@@ -54,6 +55,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="login-wrapper">
+      <img src={profile} alt="profile" className="profile" />
         <h1>Welcome!!!</h1>
         <form className="login-form" onSubmit={loginUser}>
           <input
