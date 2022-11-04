@@ -3,6 +3,7 @@
 /* eslint-disable implicit-arrow-linebreak */
 import { React, useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import { FaAngellist } from 'react-icons/fa';
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
@@ -16,6 +17,7 @@ const Nav = () => {
   const user = useSelector((store) => store.user);
   const dispatch = useDispatch();
   const navRef = useRef();
+  const navigate = useNavigate();
   const [isHide, setHide] = useState(false);
 
   const showHideNavbar = () => {
@@ -31,6 +33,7 @@ const Nav = () => {
     dispatch(removeUSER());
     localStorage.removeItem('user');
     alert('USER SIGNED OUT SUCCESSFULLY!');
+    navigate('/');
   };
 
   return (
