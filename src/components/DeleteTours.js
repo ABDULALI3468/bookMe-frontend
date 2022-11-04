@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/jsx-closing-tag-location */
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router';
@@ -25,10 +26,6 @@ const DeleteTours = () => {
       navigate('/');
     }
   }, [navigate, tours]);
-
-  useEffect(() => {
-    dispatch(fetchApiDataTours());
-  }, [dispatch, fetchApiDataTours, tours]);
 
   const deleteTour = (id) => {
     if (user.length > 0) {
@@ -60,7 +57,7 @@ const DeleteTours = () => {
                 <button
                   type="button"
                   className={`${
-                    user[0].user.user_id === tour.user_id ? '' : 'disable'
+                    user[0].user.user_id === tour.user_id ? 'disable' : ''
                   }`}
                   onClick={() => deleteTour(tour.id)}
                 >
