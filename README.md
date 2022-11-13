@@ -182,12 +182,12 @@ also be destroyed!
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ABDULALI3468/bookMe-frontend.git/issues).
+Feel free to check the [issues page](https://github.com/ABDULALI3468/bookMe-frontend/issues).
 
 <!-- License -->
 ## :warning: License
 
-See [LICENSE](./LICENSE.txt) for more information.
+See [LICENSE](./LICENSE) for more information.
 
 
 <!-- Contact -->
