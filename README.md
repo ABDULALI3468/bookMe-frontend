@@ -11,11 +11,6 @@ Maybe you can mention me or this repo in the acknowledgements too
   <img src="./src/assets/images/README-logo.png" alt="logo" width="200" height="auto" />
   <h1>README for our Project</h1>
 
-  <p>
-    An awesome README template for your projects!
-  </p>
-
-
 <!-- Badges -->
 <p>
   <a href="https://github.com/ABDULALI3468/bookMe-frontend/graphs/contributors">
@@ -34,7 +29,7 @@ Maybe you can mention me or this repo in the acknowledgements too
     <img src="https://img.shields.io/github/issues/ABDULALI3468/bookMe-frontend" alt="open issues" />
   </a>
   <a href="https://github.com/ABDULALI3468/bookMe-frontend/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/Louis3797/awesome-readme-template.svg" alt="license" />
+    <img src="https://img.shields.io/badge/license-MIT-green" alt="license" />
   </a>
 </p>
 
@@ -79,8 +74,9 @@ Maybe you can mention me or this repo in the acknowledgements too
 <!-- Screenshots -->
 ### :camera: Screenshots
 
-<div align="center">
-  <img src="https://i.imgur.com/Gus9sKi.png/600x400?text=Your+Screenshot+here" alt="screenshot" />
+<div align="center" >
+  <img src="https://i.imgur.com/Gus9sKi.png/600x400?text=Your+Screenshot+here" title="Project Image"
+  style="display: inline-block; margin: 5rem auto; width: 70%; height: auto; border-radius: 20px;" alt="screenshot" />
 </div>
 
 
