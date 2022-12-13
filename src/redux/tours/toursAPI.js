@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { getApiDataTour, getApiDataTourDetail, removeTour } from './tours';
 
-const URL = 'https://booking-tour-app.herokuapp.com/tours';
+const URL = 'https://tour-booking.onrender.com/tours';
 
 export const fetchApiDataTours = () => async (dispatch) => {
   const result = await fetch(URL);

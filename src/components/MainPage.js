@@ -29,6 +29,10 @@ const MainPage = () => {
     dispatch(fetchApiDataTours());
   }, [dispatch]);
 
+  useEffect(() => {
+    document.title = 'Book Me';
+  }, []);
+
   return (
     <main className="main-page">
       <div className="header">
@@ -67,12 +71,12 @@ const MainPage = () => {
               <div className="each-tour">
                 <img src={tour.image} className="tour-image" alt="Tour" />
                 <h2 className="tour-heading">
-                  {tour.name.length > 20
+                  {tour.name && tour.name.length > 20
                     ? `${tour.name.substr(0, 50)}...`
                     : tour.name}
                 </h2>
                 <Dots />
-                <p className="tour-detail">{`${tour.description.substr(
+                <p className="tour-detail">{`${tour.description && tour.description.substr(
                   0,
                   50,
                 )}...`}</p>

@@ -32,8 +32,12 @@ const Nav = () => {
     e.preventDefault();
     dispatch(removeUSER());
     localStorage.removeItem('user');
-    alert('USER SIGNED OUT SUCCESSFULLY!');
     navigate('/');
+    alert('USER SIGNED OUT SUCCESSFULLY!');
+  };
+
+  const loginUser = () => {
+    navigate('/login');
   };
 
   return (
@@ -84,7 +88,9 @@ const Nav = () => {
             Sign Out
           </button>
         ) : (
-          ''
+          <button type="button" className="sign-out-button" onClick={loginUser}>
+            Log In
+          </button>
         )}
 
         <div className="nav-footer">

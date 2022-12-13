@@ -1,8 +1,8 @@
 const ADD_RESERVATION = 'ADD_RESERVATION';
 const REMOVE_RESERVATION = 'REMOVE_RESERVATION';
 const GET_API_DATA_RESERVATION = 'GET_API_DATA_RESERVATION';
-const URL = 'https://booking-tour-app.herokuapp.com/reserve';
-const URL2 = 'https://booking-tour-app.herokuapp.com/user_reservations';
+const URL = 'https://tour-booking.onrender.com/reserve';
+const URL2 = 'https://tour-booking.onrender.com/user_reservations';
 
 const initialState = [];
 

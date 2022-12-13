@@ -10,24 +10,24 @@ import '../styles/delete.css';
 const DeleteTours = () => {
   const user = useSelector((store) => store.user);
   const tours = useSelector((store) => store.tours);
+  const [filteredTours, setfilteredTours] = useState([]);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
-  const filteredTours = tours.filter(
-    (tour) => user[0].user.user_id === tour.user_id,
-  );
 
   useEffect(() => {
     dispatch(fetchApiDataTours());
   }, [dispatch]);
 
   useEffect(() => {
-    if (user.length === 0) {
+    if (user.length === 0 || tours.length === 0) {
       navigate('/login');
     } else {
+      setfilteredTours(
+        tours.filter((tour) => user[0].user.user_id === tour.user_id),
+      );
       navigate('/tours/delete');
     }
-  }, [navigate, user]);
+  }, [user.length, tours.length]);
 
   useEffect(() => {
     if (tours.length < 1) {
@@ -49,7 +49,7 @@ const DeleteTours = () => {
     return (
       <div className="delete-tour">
         <div className="tour-container">
-          {tours.map((tour) => (
+          {filteredTours.map((tour) => (
             <div key={tour.id} className="tour-element">
               <img className="tour-del-image" src={tour.image} alt="tour" />
               <div className="tour-overlay"></div>

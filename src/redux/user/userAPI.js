@@ -1,7 +1,7 @@
 import { addUSER, removeUSER } from './user';
 
-const SIGNUP = 'https://booking-tour-app.herokuapp.com/signup';
-const LOGIN = 'https://booking-tour-app.herokuapp.com/login';
+const SIGNUP = 'https://tour-booking.onrender.com/signup';
+const LOGIN = 'https://tour-booking.onrender.com/login';
 
 export const login = (data) => async (dispatch) => {
   const response = await fetch(LOGIN, {
