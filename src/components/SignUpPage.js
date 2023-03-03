@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { signup } from '../redux/user/userAPI';
-import profile from '../assets/images/profile.png';
-import '../styles/SignUpPage.css';
+import '../styles/registeration.css';
+import logo from '../assets/images/apps-logo.webp';
 
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -32,11 +32,11 @@ const SignUp = () => {
   }, []);
 
   return (
-    <div className="signup">
-      <div className="signup-wrapper">
-        <img src={profile} alt="profile" className="profile" />
-        <h1>Sign Up</h1>
-        <form className="signup-form" onSubmit={createUser}>
+    <div className="login-page">
+      <img className="app-logo" src={logo} alt="" />
+      <h1 className="welcome">Welcome back to Tourify!</h1>
+      <div className="form">
+        <form className="register-form" onSubmit={createUser}>
           <input
             type="text"
             placeholder="Name"
@@ -46,7 +46,7 @@ const SignUp = () => {
           />
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Email Address"
             id="email"
             required
             onChange={onChange}
@@ -58,15 +58,15 @@ const SignUp = () => {
             required
             onChange={onChange}
           />
+
           <button type="submit" value="add-tour">
             Register
           </button>
+          <p className="message">
+            Already registered?
+            <Link to="/login">Login</Link>
+          </p>
         </form>
-        <div className="form-links">
-          <h3>Do you have an account?</h3>
-          <p>you may Login!</p>
-          <Link to="/login">Login</Link>
-        </div>
       </div>
     </div>
   );

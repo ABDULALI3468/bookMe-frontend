@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* eslint-disable arrow-body-style */
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable object-curly-newline */
@@ -30,7 +31,8 @@ const MainPage = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    document.title = 'Book Me';
+    document.title =
+      'Bookme World: Deals on Things to do, Activities & Attractions';
   }, []);
 
   return (
@@ -76,10 +78,9 @@ const MainPage = () => {
                     : tour.name}
                 </h2>
                 <Dots />
-                <p className="tour-detail">{`${tour.description && tour.description.substr(
-                  0,
-                  50,
-                )}...`}</p>
+                <p className="tour-detail">{`${
+                  tour.description && tour.description.substr(0, 50)
+                }...`}</p>
               </div>
             </Link>
           </SwiperSlide>
